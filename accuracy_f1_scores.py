@@ -31,7 +31,7 @@ def accuracy_f1_scores(y_train, X_train, y_val, X_val, model, verbose=1):
         
         Training F1-Score:           %.4f
         Validation F1-Score:         %.4f
-        ''' %(train_score, val_score))
-    else:
+        ''' %(train_acc, val_acc, train_f1, val_f1))
+   	 else:
         return train_acc, val_acc, train_f1, val_f1
     
